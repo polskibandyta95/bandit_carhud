@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
+
+@font-face {
+  font-family: "Gilroy-Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("fonts/Gilroy-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Gilroy-Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("fonts/Gilroy-Bold.woff") format("woff");
+}
+body {
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    bottom: 3%;
+    right: 0;
+    z-index: 9999;
+    color: white;
+    pointer-events: none;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    animation: fadeIn 0.1s ease-in forwards;
+}
+#hud-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+
+    width: 250px;
+    position: absolute;
+    bottom: 25px;
+    right: 10px;
+}
+
+#main-display {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 105%;
+}
+
+#gear-speed {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#gear {
+    font-size: 20px;
+    color: gray;
+    margin-bottom: 0;
+    font-family: "Orbitron";
+}
+
+
+#speed {
+    font-size: 48px;
+    width: 80px; /* Adjust as necessary */
+    text-align: left;
+    font-family: "Orbitron";
+    display: flex; /* Align digits inline */
+    justify-content: flex; /* Align digits to the right */
+    margin-right: 40px; /* Adjust the value to move it to the right */
+}
+
+.digit {
+    display: inline-block;
+    transition: opacity 0.5s ease; /* Smooth opacity transition */
+}
+.parent-container {
+    padding-left: 0px; /* Adjust if necessary to align with the left edge */
+}
+
+#status-icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 15px;
+	margin-top: 60px;
+    position: relative;
+	display: inline-table;
+	
+}
+.biegi {
+	display: inline-table;
+}
+
+.status-icon {
+    width: 18px;
+    height: 18px;
+    opacity: 0.2;
+    transition: opacity 0.3s ease, filter 0.3s ease;
+    margin-bottom: 5px;
+	margin-right: 15px;
+}
+
+.status-icon2 {
+    width: 15px;
+    height: 15px;
+    opacity: 0.8;
+    transition: opacity 0.3s ease, filter 0.3s ease;
+    margin-bottom: 0px;
+	margin-right: 2px;
+}
+
+.status-icon.active {
+    opacity: 1;
+}
+
+.status-icon.red {
+    filter: hue-rotate(0deg) saturate(100%) brightness(150%);
+}
+
+#radial-gauges {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 10px;
+    position: relative;
+}
+
+.gauge {
+    width: 36px;
+    height: 36px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.circular-chart {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.circle-bg {
+    fill: none;
+    stroke: #ff9900;
+	opacity: 0.3;
+    stroke-width: 2.8;
+}
+.circle-bg2 {
+    fill: none;
+    stroke: #a020f0;
+	opacity: 0.3;
+    stroke-width: 2.8;
+}
+
+.circle {
+    fill: none;
+    stroke-width: 2.8;
+    stroke-linecap: round;
+    transition: stroke-dasharray 0.3s ease;
+}
+
+.fuel .circle {
+    stroke: #ff9900;
+}
+
+.engine .circle {
+    stroke: #a020f0;
+}
+
+image {
+    /* Optional: adjust as needed */
+    border-radius: 50%;
+}
+
+
+#rpm-bar-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2px;
+    width: 100%;
+	height: 150%;
+}
+
+.bars {
+    display: flex;
+    align-items: center;
+}
+
+.bar {
+    width: 10px;
+    height: 35px;
+    margin-right: 2px;
+    border-radius: 2px;
+    background-color: #fff; /* Default to grey */
+}
+
+.purple {
+    background: linear-gradient(180deg, rgb(160, 1, 240) 0%, rgba(114,8,168,1) 5%, rgb(150, 1, 224) 100%);
+}
+
+.szare {
+opacity: 0.3;
+}

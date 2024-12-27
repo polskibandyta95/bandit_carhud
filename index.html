@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speedometer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="hud-container" class="fade-in">
+        <div id="main-display">
+            <!-- Gear and Speed -->
+            <div id="gear-speed">
+			<div class="biegi">
+			<img id="gear-icon" src="icons/gear.png" class="status-icon2">
+                <div class="biegi" id="gear">N</div>
+				</div>
+				
+				<div class="parent-container">
+                <div id="speed">
+				        <!-- Digits will be dynamically inserted here -->
+				</div>
+				</div>
+            </div>
+
+            <!-- Icons -->
+            <div id="status-icons">
+                <img id="doors-icon" src="icons/doors.png" class="status-icon" alt="Doors">
+                <img id="seatbelt-icon" src="icons/seatbelt.png" class="status-icon" alt="Seatbelt">
+            </div>
+
+            <!-- Radial Gauges -->
+<div id="radial-gauges">
+    <div id="engine-gauge" class="gauge">
+        <svg viewBox="0 0 36 36" class="circular-chart engine">
+            <path class="circle-bg2"
+                  d="M18 2.0845
+                     a 15.9155 15.9155 0 0 1 0 31.831
+                     a 15.9155 15.9155 0 0 1 0 -31.831"
+            />
+            <path class="circle"
+                  d="M18 2.0845
+                     a 15.9155 15.9155 0 0 1 0 31.831
+                     a 15.9155 15.9155 0 0 1 0 -31.831"
+            />
+            <image xlink:href="icons/engine.png" x="9" y="9" width="18" height="18" />
+        </svg>
+    </div>
+
+    <div id="fuel-gauge" class="gauge">
+        <svg viewBox="0 0 36 36" class="circular-chart fuel">
+            <path class="circle-bg"
+                  d="M18 2.0845
+                     a 15.9155 15.9155 0 0 1 0 31.831
+                     a 15.9155 15.9155 0 0 1 0 -31.831"
+            />
+            <path class="circle"
+                  d="M18 2.0845
+                     a 15.9155 15.9155 0 0 1 0 31.831
+                     a 15.9155 15.9155 0 0 1 0 -31.831"
+            />
+            <image xlink:href="icons/engineicon.png" x="9" y="9" width="18" height="18" />
+        </svg>
+    </div>
+</div>
+
+        </div>
+
+        <!-- RPM Bar -->
+        <div id="rpm-bar-container">
+            <div class="bars">
+                <!-- These bars will be dynamically updated via JavaScript -->
+                <!-- 16 bars in total -->
+                <div class="bar grey" id="bar1"></div>
+                <div class="bar grey" id="bar2"></div>
+                <div class="bar grey" id="bar3"></div>
+                <div class="bar grey" id="bar4"></div>
+                <div class="bar grey" id="bar5"></div>
+                <div class="bar grey" id="bar6"></div>
+                <div class="bar grey" id="bar7"></div>
+                <div class="bar grey" id="bar8"></div>
+                <div class="bar grey" id="bar9"></div>
+                <div class="bar grey" id="bar10"></div>
+                <div class="bar grey" id="bar11"></div>
+                <div class="bar grey" id="bar12"></div>
+                <div class="bar grey" id="bar13"></div>
+                <div class="bar grey" id="bar14"></div>
+                <div class="bar grey" id="bar15"></div>
+                <div class="bar grey" id="bar16"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
