@@ -69,20 +69,20 @@ body {
 
 #speed {
     font-size: 48px;
-    width: 80px; /* Adjust as necessary */
+    width: 80px;
     text-align: left;
     font-family: "Orbitron";
-    display: flex; /* Align digits inline */
-    justify-content: flex; /* Align digits to the right */
-    margin-right: 40px; /* Adjust the value to move it to the right */
+    display: flex; 
+    justify-content: flex;
+    margin-right: 40px;
 }
 
 .digit {
     display: inline-block;
-    transition: opacity 0.5s ease; /* Smooth opacity transition */
+    transition: opacity 0.5s ease;
 }
 .parent-container {
-    padding-left: 0px; /* Adjust if necessary to align with the left edge */
+    padding-left: 0px;
 }
 
 #status-icons {
@@ -176,7 +176,6 @@ body {
 }
 
 image {
-    /* Optional: adjust as needed */
     border-radius: 50%;
 }
 
@@ -199,7 +198,7 @@ image {
     height: 35px;
     margin-right: 2px;
     border-radius: 2px;
-    background-color: #fff; /* Default to grey */
+    background-color: #fff;
 }
 
 .purple {
