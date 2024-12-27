@@ -4,6 +4,4 @@
 
 ### Simple custom made car hud for my server. I'm not using it anymore so give it away for free
 
-![screenshot](https://i.postimg.cc/c4z2T5Bh/Untddddddditled.png)
-
-https://i.postimg.cc/c4z2T5Bh/Untddddddditled.png
+![image](https://github.com/user-attachments/assets/bd57439e-ae26-45e1-9e49-fdb9948a8f20)
