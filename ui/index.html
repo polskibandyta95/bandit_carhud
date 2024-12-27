@@ -3,14 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Speedometer</title>
+    <title>Car Hud by PolishBandit</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <div id="hud-container" class="fade-in">
         <div id="main-display">
-            <!-- Gear and Speed -->
             <div id="gear-speed">
 			<div class="biegi">
 			<img id="gear-icon" src="icons/gear.png" class="status-icon2">
@@ -19,18 +18,15 @@
 				
 				<div class="parent-container">
                 <div id="speed">
-				        <!-- Digits will be dynamically inserted here -->
 				</div>
 				</div>
             </div>
 
-            <!-- Icons -->
             <div id="status-icons">
                 <img id="doors-icon" src="icons/doors.png" class="status-icon" alt="Doors">
                 <img id="seatbelt-icon" src="icons/seatbelt.png" class="status-icon" alt="Seatbelt">
             </div>
 
-            <!-- Radial Gauges -->
 <div id="radial-gauges">
     <div id="engine-gauge" class="gauge">
         <svg viewBox="0 0 36 36" class="circular-chart engine">
@@ -67,11 +63,8 @@
 
         </div>
 
-        <!-- RPM Bar -->
         <div id="rpm-bar-container">
             <div class="bars">
-                <!-- These bars will be dynamically updated via JavaScript -->
-                <!-- 16 bars in total -->
                 <div class="bar grey" id="bar1"></div>
                 <div class="bar grey" id="bar2"></div>
                 <div class="bar grey" id="bar3"></div>
